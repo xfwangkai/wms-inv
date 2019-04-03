@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+
+spring:
+  datasource:
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        url: jdbc:oracle:thin:@192.168.100.29:1521:scprd
+        username: wmwhse1
+        password: WMwhSql1
+        type: com.alibaba.druid.pool.DruidDataSource
+
+logging:
+  config: classpath:logging-config.xml
+
+mybatis:
+  configuration:
+    jdbc-type-for-null: NULL
+
